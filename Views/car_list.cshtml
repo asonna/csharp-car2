@@ -1,0 +1,10 @@
+<h1>Available Cars</h1>
+<p>Here the cars we currently have in stock:</p>
+@foreach(var carInstance in Model)
+{
+  <br>
+  <p>@carInstance.GetMakeModel()</p>
+  <p>Year: @carInstance.GetYear()</p>
+  <p>Price: @carInstance.GetPrice()</p>
+  <br>
+}
