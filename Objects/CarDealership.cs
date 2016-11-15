@@ -51,5 +51,9 @@ namespace CarDealership.Objects
     {
       return _carList;
     }
+    public static void ClearCarList()
+    {
+      _carList.Clear();
+    }
   }
 }

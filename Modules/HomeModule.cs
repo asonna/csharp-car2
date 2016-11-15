@@ -24,6 +24,10 @@ namespace CarDealership
       Get["/car_list"] = _ => {
         return View["car_list.cshtml", Car.ViewCarList()];
       };
+      Post["/clear_list"] = _ => {
+        Car.ClearCarList();
+        return View["/cleared_list.cshtml"];
+      };
     }
   }
 }
