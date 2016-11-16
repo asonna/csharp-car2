@@ -28,6 +28,7 @@ namespace CarDealership
         Car.ClearCarList();
         return View["/cleared_list.cshtml"];
       };
+      
     }
   }
 }
